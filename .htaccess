@@ -1,0 +1,10 @@
+RewriteEngine On
+Options -Indexes
+# Remove index.html from URL
+RewriteCond %{THE_REQUEST} /(.*/)index\.html [NC]
+RewriteRule ^(.*/)index\.html$ /$1 [R=301,L]
+# Redirects
+Redirect 301 /discord https://discord.gg/Hh4uW9aMUu
+Redirect 301 /instagram https://instagram.com/aeroitemsxyz
+Redirect 301 /youtube https://youtube.com/@AeroItems
+Redirect 301 /github https://github.com/BenJumperr
